@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# OS/editor
+.DS_Store
+._*
+.vscode/
+.idea/
+
+# Raw/prepared third-party datasets
+data/*.csv
+data/*.zip
+data/*.data
+data/*.arff
+
+# Generated study outputs
+results/
+plot_data/
+figures/
+logs/
+analysis/*.csv
+analysis/*.json
+
+# Checkpoints/backups/archives
+**/checkpoints/
+repair_backup_*/
+pilot_v1_archive/
+*.tar.gz
+*.tgz
+*.zip
+
+# Temporary files
+*.tmp

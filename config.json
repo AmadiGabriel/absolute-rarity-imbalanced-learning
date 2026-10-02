@@ -1,0 +1,109 @@
+{
+  "random_seed": 20260917,
+  "synthetic": {
+    "pilot_repeats": 5,
+    "full_repeats": 30,
+    "population_n": 300000,
+    "minority_counts": [
+      10,
+      20,
+      50,
+      100,
+      200
+    ],
+    "fixed_ratio": 0.01,
+    "fixed_minority_for_ratio_scenario": 50,
+    "ratios": [
+      0.005,
+      0.01,
+      0.025,
+      0.05,
+      0.1
+    ],
+    "fixed_total_n": 10000,
+    "validation_minority_counts": [
+      5,
+      10,
+      20,
+      50,
+      100,
+      200
+    ],
+    "validation_fixed_total_n": 10000,
+    "validation_ratio": 0.01,
+    "validation_fixed_minority": 50,
+    "validation_ratios": [
+      0.005,
+      0.01,
+      0.025,
+      0.05,
+      0.1
+    ],
+    "oracle_positive_n": 5000,
+    "oracle_negative_n": 45000,
+    "dimensions_pilot": [
+      20
+    ],
+    "dimensions_full": [
+      10,
+      50,
+      100
+    ],
+    "class_separations_pilot": [
+      1.0
+    ],
+    "class_separations_full": [
+      0.7,
+      1.5
+    ],
+    "flip_y_pilot": [
+      0.0
+    ],
+    "flip_y_full": [
+      0.0,
+      0.01
+    ]
+  },
+  "real": {
+    "pilot_outer_splits": 3,
+    "pilot_outer_repeats": 1,
+    "full_outer_splits": 5,
+    "full_outer_repeats": 5,
+    "inner_splits": 3,
+    "subsample_pilot_repeats": 5,
+    "subsample_full_repeats": 30,
+    "subsample_test_fraction": 0.3,
+    "controlled_training_prevalence": 0.1,
+    "validation_rarity_repeats_pilot": 5,
+    "validation_rarity_repeats_full": 20
+  },
+  "statistics": {
+    "alpha": 0.05,
+    "bootstrap_replicates": 2000,
+    "equivalence_margins": {
+      "auc": 0.01,
+      "ap": 0.02,
+      "balanced_accuracy": 0.02,
+      "mcc": 0.02,
+      "precision": 0.02,
+      "recall": 0.02,
+      "minority_f1": 0.02
+    },
+    "note": "Equivalence margins are provisional and can be changed later without rerunning any ML models. Pre-specify final margins before inspecting full-study results."
+  },
+  "figures": {
+    "font_family": "Times New Roman",
+    "fallback_serif": [
+      "Times New Roman",
+      "Times",
+      "Nimbus Roman",
+      "DejaVu Serif"
+    ],
+    "dpi": 600,
+    "formats": [
+      "png",
+      "pdf",
+      "svg"
+    ]
+  }
+}
